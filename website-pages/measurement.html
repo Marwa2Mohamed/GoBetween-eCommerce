@@ -14,12 +14,6 @@
              <script src="html5shiv-master/dist/html5shiv.min.js"></script>
         <![endif]-->
     </head>
-    <style>
-        .menjackets, .menjackets th,.menjackets td {
-            border: 1px solid #000;
-            border-collapse: collapse;
-        }
-    </style> <!-- deleted later-->
     <body>
         
         <!--Start The Header & Navigation Section--> 
@@ -54,9 +48,11 @@
             
          <h1>measurement</h1>
             
-        <!--beginning of men's shoes sizes-->    
-         <h3>men's international shoe size conversion chart</h3>
-            <table>
+        <!--beginning of men's shoes sizes-->
+            
+         <div class="men-shoes-container">
+            <h3>men's international shoe size conversion chart</h3>
+            <table class="menshoes">
                 <tr class="table-header">
                     <th>USA</th>
                     <th>UK</th>
@@ -202,12 +198,15 @@
                     <td>32</td>
                 </tr>
             </table>
-        <!--ending of men's shoes sizes-->  <br/>
+         </div><br/>
+            
+        <!--ending of men's shoes sizes-->  
             
         <!--beginning of women's shoes sizes--> 
             
-         <h3>women's international shoe size conversion chart</h3>
-            <table>
+        <div class="women-shoes-container">    
+            <h3>women's international shoe size conversion chart</h3>
+            <table class="womenshoes">
                 <tr class="table-header">
                     <th>USA</th>
                     <th>UK</th>
@@ -318,14 +317,17 @@
                 </tr>
                 
             </table>
+        </div><br/>
+            
         <!--ending of women's shoes sizes-->
             
         <!--beginning of men's international tops sizes--> 
-            
-         <h3>men's international jackets, coats, blazers &amp; tops size conversion chart</h3>
-            <table class="menjackets">
+            \
+         <div class="men-int-container">   
+            <h3>men's international jackets, coats, blazers &amp; tops size conversion chart</h3>
+            <table class="men-int-jackets">
                 <tr class="table-header">
-                    <th>S-M-L</th>
+                    <th>Size</th>
                     <th>AU/US/UK</th>
                     <th>EUR/France/Italy</th>
                     <th>Japan</th>
@@ -408,7 +410,332 @@
                 </tr>
                 
             </table>
-        <!--ending of women's shoes sizes-->
+         </div><br/>
+            
+        <!--ending of men's tops sizes-->
+        
+        <!--beginning of men's tops sizes--> 
+            
+         <div class="men-tops-container">   
+            <h3>men's jackets, coats, blazers &amp; tops size</h3>
+            <table class="menjackets">
+                <tr class="table-header">
+                    <th>Size</th>
+                    <th>USA</th>
+                    <th>EU</th>
+                    <th>Chest(inch)</th>
+                    <th>Sleeve(inch)</th>
+                    <th>Waist(inch)</th>
+                </tr>
+                <tr class="table-row-data">
+                    <td>S</td>
+                    <td>
+                        34<br/>
+                        <span class="secondvalue">36</span>
+                    </td>
+                    <td>
+                        44<br/>
+                        <span class="secondvalue">46</span>
+                    </td>
+                    <td>
+                        36.2<br/>
+                        <span class="secondvalue">37.8</span>
+                    </td>
+                    <td>
+                        32<br/>
+                        <span class="secondvalue">32.5</span>
+                    </td>
+                    <td>
+                        29<br/>
+                        <span class="secondvalue">31</span>
+                    </td>
+                </tr>
+                <tr class="table-row-data">
+                    <td>M</td>
+                    <td>
+                        38<br/>
+                        <span class="secondvalue">40</span>
+                    </td>
+                    <td>
+                        48<br/>
+                        <span class="secondvalue">50</span>
+                    </td>
+                    <td>
+                        39.4<br/>
+                        <span class="secondvalue">41</span>
+                    </td>
+                    <td>
+                        33<br/>
+                        <span class="secondvalue">33.5</span>
+                    </td>
+                    <td>
+                        33<br/>
+                        <span class="secondvalue">35</span>
+                    </td>
+                </tr>
+                <tr class="table-row-data">
+                    <td>L</td>
+                    <td>
+                        42 <br/>
+                        <span class="secondvalue">44</span>
+                    </td>
+                    <td>
+                        52<br/>
+                        <span class="secondvalue">54</span>
+                    </td>
+                    <td>
+                        42.6<br/>
+                        <span class="secondvalue">44.2</span>
+                    </td>
+                    <td >
+                        34<br/>
+                        <span class="secondvalue">34.5</span>
+                    </td>
+                    <td >
+                        37<br/>
+                        <span class="secondvalue">39</span>
+                    </td>
+                   
+                </tr>
+                <tr class="table-row-data">
+                    <td>XL</td>
+                    <td>
+                        46 <br/>
+                        <span class="secondvalue">48</span>
+                    </td>
+                    <td>
+                        56<br/>
+                        <span class="secondvalue">58</span>
+                    </td>
+                    <td>
+                        45.8<br/>
+                        <span class="secondvalue">47.5</span>
+                    </td>
+                    <td>
+                        35<br/>
+                        <span class="secondvalue">35.7</span>
+                    </td>
+                    <td>
+                        41<br/>
+                        <span class="secondvalue">43</span>
+                    </td>
+                </tr><br/>
+                <tr class="table-row-data">
+                    <td>XXL</td>
+                    <td>
+                        50 <br/>
+                        <span class="secondvalue">52</span>
+                    </td>
+                    <td>
+                        60 <br/>
+                        <span class="secondvalue">62</span>
+                    </td>
+                    <td>
+                        49.2<br/>
+                        <span class="secondvalue">50.9</span>
+                    </td>
+                    <td>
+                        36.2<br/>
+                        <span class="secondvalue">36.7</span>
+                    </td>
+                    <td>
+                        45<br/>
+                        <span class="secondvalue">47</span>
+                    </td>
+                </tr>
+                <tr class="table-row-data">
+                    <td>XXXL</td>
+                     <td>
+                        54<br/>
+                        <span class="secondvalue">56</span>
+                    </td>
+                    <td>
+                        64<br/>
+                        <span class="secondvalue">66</span>
+                    </td>
+                    <td>
+                        45.8<br/>
+                        <span class="secondvalue">47.5</span>
+                    </td>
+                    <td>
+                        37.2<br/>
+                        <span class="secondvalue">37.7</span>
+                    </td>
+                    <td>
+                        49<br/>
+                        <span class="secondvalue">51</span>
+                    </td>
+                </tr>
+                
+            </table>
+         </div><br/>
+            
+        <!--ending of men's tops sizes-->
+        
+        <!--beginning of men's pants sizes--> 
+            
+         <div class="men-pants-container"> 
+            <h3>men's pants size</h3>
+            <table class="menpants">
+                <tr class="table-header">
+                    <th>Size</th>
+                    <th>USA</th>
+                    <th>EU</th>
+                    <th>Waist(inch)</th>
+                    <th>Hips(inch)</th>
+                    <th>Inseam(inch)</th>
+                </tr>
+                <tr class="table-row-data">
+                    <td>S</td>
+                    <td>
+                        34<br/>
+                        <span class="secondvalue">36</span>
+                    </td>
+                    <td>
+                        44<br/>
+                        <span class="secondvalue">46</span>
+                    </td>
+                    <td>
+                        29<br/>
+                        <span class="secondvalue">31</span>
+                    </td>
+                    <td>
+                        30.7<br/>
+                        <span class="secondvalue">31.2</span>
+                    </td>
+                    <td>
+                        29<br/>
+                        <span class="secondvalue">31</span>
+                    </td>
+                </tr>
+                
+                <tr class="table-row-data">
+                    <td>M</td>
+                    <td>
+                        38<br/>
+                        <span class="secondvalue">40</span>
+                    </td>
+                    <td>
+                        48<br/>
+                        <span class="secondvalue">50</span>
+                    </td>
+                    <td>
+                        33<br/>
+                        <span class="secondvalue">35</span>
+                    </td>
+                    <td>
+                        41<br/>
+                        <span class="secondvalue">42</span>
+                    </td>
+                    <td>
+                        31.5<br/>
+                        <span class="secondvalue">32</span>
+                    </td>
+                </tr>
+                
+                <tr class="table-row-data">
+                    <td>L</td>
+                    <td>
+                        42 <br/>
+                        <span class="secondvalue">44</span>
+                    </td>
+                    <td>
+                        52<br/>
+                        <span class="secondvalue">54</span>
+                    </td>
+                    <td>
+                        37<br/>
+                        <span class="secondvalue">39</span>
+                    </td>
+                    <td >
+                        44<br/>
+                        <span class="secondvalue">46</span>
+                    </td>
+                    <td >
+                        32.5<br/>
+                        <span class="secondvalue">32.7</span>
+                    </td>
+                   
+                </tr>
+                
+                <tr class="table-row-data">
+                    <td>XL</td>
+                    <td>
+                        46 <br/>
+                        <span class="secondvalue">48</span>
+                    </td>
+                    <td>
+                        56<br/>
+                        <span class="secondvalue">58</span>
+                    </td>
+                    <td>
+                        41<br/>
+                        <span class="secondvalue">43</span>
+                    </td>
+                    <td>
+                        48<br/>
+                        <span class="secondvalue">50</span>
+                    </td>
+                    <td>
+                        33<br/>
+                        <span class="secondvalue">33.5</span>
+                    </td>
+                </tr>
+                
+                <tr class="table-row-data">
+                    
+                    <td>XXL</td>
+                    <td>
+                        50 <br/>
+                        <span class="secondvalue">52</span>
+                    </td>
+                    <td>
+                        60 <br/>
+                        <span class="secondvalue">62</span>
+                    </td>
+                    <td>
+                        45<br/>
+                        <span class="secondvalue">47</span>
+                    </td>
+                    <td>
+                        52<br/>
+                        <span class="secondvalue">54</span>
+                    </td>
+                    <td>
+                        34<br/>
+                        <span class="secondvalue">34.2</span>
+                    </td>
+                </tr>
+                
+                <tr class="table-row-data">
+                    <td>XXXL</td>
+                     <td>
+                        54<br/>
+                        <span class="secondvalue">56</span>
+                    </td>
+                    <td>
+                        64<br/>
+                        <span class="secondvalue">66</span>
+                    </td>
+                    <td>
+                        49<br/>
+                        <span class="secondvalue">51</span>
+                    </td>
+                    <td>
+                        56<br/>
+                        <span class="secondvalue">57</span>
+                    </td>
+                    <td>
+                        34.5<br/>
+                        <span class="secondvalue">35</span>
+                    </td>
+                </tr>
+                
+            </table>
+             
+         </div><br/>
+            
+        <!--ending of men's pants sizes-->
             
         </main>
         <!--End The Main Section--> 
