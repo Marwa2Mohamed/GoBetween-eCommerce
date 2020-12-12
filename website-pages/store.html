@@ -4,7 +4,7 @@
         <title>Shopping with go-between</title>
         <meta charset = "UTF-8"/>
         <meta name = "viewport""" content = "width = device-width, initial-scale = 1.0"/>
-        <meta name = "keywords" content = "shopping, Shopping, Accessories, accessories, watches, Watches, dresses, Dresses, blouses, Blouses, shoes, Shoes, t-shirt, T-shirt, trousers, Trousers, pants, Pants"/>
+        <meta name = "keywords" content = "shopping, Shopping, shopping stores, Shopping stores, shopping Stores, Shopping Stores, Accessories, accessories, watches, Watches, dresses, Dresses, blouses, Blouses, shoes, Shoes, t-shirt, T-shirt, trousers, Trousers, pants, Pants"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
@@ -46,38 +46,13 @@
         
         <!--Start The Main Section--> 
         <main>
-            
-            <!--Start The auto change image Introduction Section--> 
-            <section class = "introduction" style="border: 2px solid #000;">
-                <h1>The collection 
-                    <pre>of all brands </pre></h1>
-                <div class = "introductionbutton">
-                    <a href="men-accessories.html"><button class = "men">  shop men </button></a>
-                    <a href="women-accessories.html"><button  class = "women"> shop women </button></a>
-                </div>
-            </section>
-            <!--End The auto change image Introduction Section--> 
-            
-            <!--Start The Define who we are Section--> 
-            <section class = "whoweare" style="border: 2px solid #000;">
-                <h1>Who we are ?</h1>
-                <p> We are an E-commerce website that helps you to choose among many of your beloved brands.</p>
-                <p> <b> Note : </b> Currently, this website is just a demo not officialy working.</p>
-            </section>
-            <!--End The Define who we are Section--> 
-            
-            <!--Start The products Presentation Slider Section--> 
-            <section class="slider" style="border: 2px solid #000;">
-                <div class="slider-images-group">
-                    <img src="../images/products-image/adidas.jpg" alt="Adidas Shoes" style="border: 0;" width = "10%"/>
-                    <img src="../images/products-image/chanel-product.jpg" alt="Chanel Bag" style="border: 0;" width = "10%"/>
-                    <img src="../images/products-image/Gucci.jpg" alt="Gucci outfit" style="border: 0;" width = "10%"/>
-                    <img src="../images/products-image/nikeproduct.jpg" alt="Nike Shoes" style="border: 0;" width = "10%"/>
-                    <img src="../images/products-image/ralphlaurenproduct.jpg" alt="Ralph outfit" style="border: 0;" width = "10%"/>
-                    <img src="../images/products-image/watch1.jpg" alt="A watch" style="border: 0;" width = "10%"/>
-                </div>
-            </section>
-            <!--End The products Presentation Slider Section--> 
+         
+         <div class="text_Container">
+             <h1>Brands' Stores</h1>
+             <p>pick a brand from our products and use the below map to find the nearest one to you &lt;3.</p>
+         </div>
+        <iframe id="googleMap" width = "100%" height="100%">
+        </iframe>
             
             
         </main>
@@ -117,5 +92,15 @@
         <!--End The footer Section-->
         
         <!-- <script src="index.js"></script>-->
+        <script>
+            function myMap() {
+                var mapProp = {
+                    center:new google.maps.LatLng(51.508742,-0.120850),
+                    zoom:5,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=go-between-297705&callback=myMap"></script>
     </body>
 </html>
