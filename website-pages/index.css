@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+header nav {
+    white-space: normal;
+    text-transform: capitalize;
+    padding: 12% 2%;   
+}
+nav h1 {
+    text-align: center;
+    padding: 3%;
+}
+.mainlinks {
+    flex-direction: row;
+}
+.mainlinks li {
+    padding: 0 7% 0 0;
+}
+
+.searchandicons form {
+    background-color: #FFF;
+}
+.searchButton input[type="search"] {
+  margin-left: -6%;
+  width: 130px;
+  height: 50px;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.searchButton input[type="search"]:focus {
+  outline: none;
+}
+.searchButton svg {
+    margin-top: 15px;
+} 
+.searchButton svg:hover {
+    cursor: pointer;
+}
+.iconlinks {
+    margin-top: 10px;
+}
+
+
