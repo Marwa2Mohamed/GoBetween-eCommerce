@@ -1,28 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 * {
     box-sizing: border-box;
 }
-
+/*Start header*/
 header nav {
     white-space: normal;
     text-transform: capitalize;
-    padding: 12% 2%;   
-}
-nav h1 {
-    text-align: center;
-    padding: 3%;
-}
-.mainlinks {
-    flex-direction: row;
-}
-.mainlinks li {
-    padding: 0 7% 0 0;
+    padding: 4%;
 }
 
-.searchandicons form {
+.collapse{
+    width: 30%; 
+}
+
+.mainlinks li:hover{
+    background-color: #000;
+    width: auto;
+}
+
+.searchButton {
     background-color: #FFF;
 }
 .searchButton input[type="search"] {
-  margin-left: -6%;
   width: 130px;
   height: 50px;
   border: none;
@@ -43,8 +42,32 @@ nav h1 {
 .searchButton svg:hover {
     cursor: pointer;
 }
-.iconlinks {
+.mainlinks, .searchButton, .iconlinks {
     margin-top: 10px;
 }
 
+/* End header*/
 
+/*Start main Introduction*/
+.introduction {
+    margin-top: -29px;
+    padding: 20%;
+    background: url(../images/nike.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.introduction h1 {
+    color: #FFF;
+}
+.introduction h1 span {
+    margin-left: -2%;
+    font-family: Lobster;
+    font-size: 4em;
+}
+.introduction h1 pre {
+    font-size: 2em;
+}
+
+/*End main Introduction*/
