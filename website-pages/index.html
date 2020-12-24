@@ -5,9 +5,7 @@
         <meta charset = "UTF-8"/>
         <meta name = "viewport""" content = "width = device-width, initial-scale = 1.0"/>
         <meta name = "keywords" content = "shopping, Shopping, Accessories, accessories, watches, Watches, dresses, Dresses, blouses, Blouses, shoes, Shoes, t-shirt, T-shirt, trousers, Trousers, pants, Pants"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="icon" href="../images/websiteIcon.svg">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet"  href="index.css" type="text/css">
@@ -19,8 +17,8 @@
 <body>
         
         <!--Start The Header & Navigation Section--> 
-    <header>
-        <nav class="navbar navbar-expand-xl flex-column flex-sm-row  justify-content-sm-between align-items-start navbar-dark bg-dark fixed-top">
+        <header>
+        <nav class="navbar navbar-expand-xl flex-sm-row  justify-content-sm-between align-items-start navbar-dark bg-dark fixed-top">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10px">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -54,35 +52,68 @@
         
         <!--Start The Main Section--> 
         <main>
-            
-            <!--Start The auto change image Introduction Section--> 
-            <section class = "introduction">
+            <div class="spacer">
+                &nbsp;
+            </div>
+            <br/>
+            <!--Start The auto change image Introduction Section-->
+            <section class = "introduction  p-md-auto ">
                 <h1 class="text-center text-capitalize fs-1 fw-bold"> <span>The collection</span> 
                     <pre class="fs-3 fst-italic lh-lg lead">of all brands </pre></h1>
-                <div class = "introductionbutton">
-                    <a href="men-accessories.html"><button class = "men">  shop men </button></a>
-                    <a href="women-accessories.html"><button  class = "women"> shop women </button></a>
+                <div class = "introductionbutton text-center mt-5">
+                    <a href="men-accessories.html"><button class = "men btn btn-dark btn-md p-3 p-md-4 text-capitalize" data-toggle="button" aria-pressed="false" autocomplete="off">  shop men </button></a>
+                    <a href="women-accessories.html"><button  class = "women btn btn-dark btn-md p-3 p-md-4 text-capitalize" data-toggle="button" aria-pressed="false" autocomplete="off"> shop women </button></a>
                 </div>
             </section>
             <!--End The auto change image Introduction Section--> 
             
             <!--Start The Define who we are Section--> 
-            <section class = "whoweare" style="border: 2px solid #000;">
-                <h1>Who we are ?</h1>
+            <section class = "whoweare text-center my-5 py-5">
+                <h1 class="h1 ">Who we are ?</h1>
                 <p> We are an E-commerce website that helps you to choose among many of your beloved brands.</p>
                 <p> <b> Note : </b> Currently, this website is just a demo not officialy working.</p>
             </section>
             <!--End The Define who we are Section--> 
             
             <!--Start The products Presentation Slider Section--> 
-            <section class="slider" style="border: 2px solid #000;">
-                <div class="slider-images-group">
-                    <img src="../images/products-image/adidas.jpg" alt="Adidas Shoes" style="border: 0;" width = "10%"/>
-                    <img src="../images/products-image/chanel-product.jpg" alt="Chanel Bag" style="border: 0;" width = "10%"/>
-                    <img src="../images/products-image/Gucci.jpg" alt="Gucci outfit" style="border: 0;" width = "10%"/>
-                    <img src="../images/products-image/nikeproduct.jpg" alt="Nike Shoes" style="border: 0;" width = "10%"/>
-                    <img src="../images/products-image/ralphlaurenproduct.jpg" alt="Ralph outfit" style="border: 0;" width = "10%"/>
-                    <img src="../images/products-image/watch1.jpg" alt="A watch" style="border: 0;" width = "10%"/>
+            <section class="slider">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                         <div class="carousel-item active">
+                            <img class="mx-auto d-block" src="../images/products-image/adidas.jpg" alt="Adidas Shoes" style="border: 0;"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block" src="../images/products-image/chanel-product.jpg" alt="Chanel Bag" style="border: 0;"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block" src="../images/products-image/Gucci.jpg" alt="Gucci outfit" style="border: 0;"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block" src="../images/products-image/nikeproduct.jpg" alt="Nike Shoes" style="border: 0;"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block" src="../images/products-image/ralphlaurenproduct.jpg" alt="Ralph outfit" style="border: 0;"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block" src="../images/products-image/watch1.jpg" alt="A watch" style="border: 0;"/>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-visible">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-visible">Next</span>
+                    </a>
                 </div>
             </section>
             <!--End The products Presentation Slider Section--> 
