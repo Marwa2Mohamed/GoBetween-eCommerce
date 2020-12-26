@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Arizonia');
 @import url('https://fonts.googleapis.com/css?family=Anaheim');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -116,3 +117,10 @@ header nav {
 .slider-images-group img{
 }
 /*End main Introduction*/
+/* Start footer*/
+#userfeedback {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* End footer*/

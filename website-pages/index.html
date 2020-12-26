@@ -76,7 +76,7 @@
             <!--End The Define who we are Section--> 
             
             <!--Start The products Presentation Slider Section--> 
-            <section class="slider">
+            <section class="slider mb-5">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
@@ -125,32 +125,32 @@
         <br/>
         
         <!--Start The footer Section--> 
-        <footer>
-            <main class = "footerMain" style="border: 2px solid #000;">
+        <footer class="bg-dark text-light p-5">
+            <main class = "footerMain container-fluid">
                 
-                <section class = "infoContainer">
-                    
+                <section class = "infoContainer row">
+                     
                     <!--Start The subscribtion form Section-->
-                    <form class = "subscribe" method = "post" enctype = "application/x-www-form-urlencoded">
+                    <form class = "subscribe col-md-5 d-flex flex-row align-items-center" method = "post" enctype = "application/x-www-form-urlencoded">
                         <img src="../images/email.svg" alt = "email icon"/>
-                        <h2>stay up to date</h2>
+                        <h2 class="align-item-center">stay up to date</h2>
                         <input type="email" autocomplete = "on" placeholder = "@ Your email address"/>
                         <input type="submit" value = "Subscribe"/>
                     </form>
                     <!--End The subscribtion form Section-->
                     
                     <!--Start The feedback form Section-->
-                    <form class = "feedback" method = "post" enctype = "application/x-www-form-urlencoded">
-                        <h2>how your feedback helps</h2>
-                        <p>Our website is a demo, is not officially working.<wbr/> So, your feedback will help us to continue and improve.<wbr/> Share anything in your mind about your experience using this website or reporting an issue. <wbr/></p>
-                        <textarea id = "userfeedback" rows="10" cols="60"></textarea><br/>
-                        <input type="submit" value = "Send"/>
+                    <form class = "feedback col-md-7 mb-5" method = "post" enctype = "application/x-www-form-urlencoded">
+                        <h2 class="text-capitalize mb-3">how your feedback helps</h2>
+                        <p class="mb-3 lh-lg">Our website is a demo, is not officially working.<wbr/> So, your feedback will help us to continue and improve.<wbr/> Share anything in your mind about your experience using this website or reporting an issue. <wbr/></p>
+                        <textarea id = "userfeedback" rows="10" cols="60" class="mb-3 mw-50 p-3"></textarea><br/>
+                        <input type="submit" value = "Send" class="btn btn-light"/>
                     </form>
                     <!--End The feedback form Section-->
                     
                 </section>
             </main> 
-            <label class ="copyright" style="border: 2px solid #000;"> @ 2020 go between copyrights</label>
+            <p class ="copyright text-center"> @ 2020 go between copyrights</p>
 
         </footer>
         <!--End The footer Section-->
