@@ -114,12 +114,18 @@ header nav {
     font-family: 'Andika New Basic', sans-serif;
 }
 
-.slider-images-group img{
-}
 /*End main Introduction*/
 /* Start footer*/
+
 #userfeedback {
     font-family: 'Roboto', sans-serif;
+    max-width: 70%;
+}
+
+.feedback input[type="submit"] {
+    text-align: center;
+    max-width: 20%;
+    margin: auto 25%;
 }
 
 
