@@ -48,9 +48,49 @@ header nav {
     margin-top: 15px;
 } 
 
-.searchButton svg:hover {
-    cursor: pointer;
+
+/*
+#SearchWebsite{
+    height: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+    
 }
+
+.contsearch:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    
+}
+
+.contsearch {
+    padding: 0;
+    border: none;
+    
+}
+
+.contsearch a {
+    padding: .75rem 1,25rem;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+*/
+
+.searchSection {
+    display: none;
+}
+
+.contsearch a {
+    text-decoration: none;
+    color: #757577;
+}
+
+.contsearch:hover {
+    background-color: #AAA;   
+}
+
 
 .mainlinks, .searchButton, .iconlinks {
     margin-top: 10px;

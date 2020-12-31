@@ -20,7 +20,7 @@
         
         <!--Start The Header & Navigation Section--> 
         <header>
-        <nav class="navbar navbar-expand-xl flex-column flex-sm-row  justify-content-sm-between align-items-start navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-xl flex-column flex-sm-row  justify-content-sm-between align-items-start navbar-dark bg-dark fixed-top" onclick="finishedSearching()">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10px">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,11 +34,32 @@
             </div>
             <h1 class = "logo navbar-brand display-1 text-center fs-1">go between</h1>
             <form class = "searchButton">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path style="fill:#bdc8b0;" fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                    <path  style="fill:#bdc8b0;" fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                </svg>
-                <input type="search" autocomplete = "on" placeholder = "search">     
+                <div class="container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path style="fill:#bdc8b0;" fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                        <path  style="fill:#bdc8b0;" fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    </svg>
+                    <input type="search" id="SearchWebsite" class="form-control" placeholder = "Search" onkeydown = "filter(this)" onmouseup="finishedSearching()">
+                    <ul class="searchSection list-group  mt-5">
+                        <li class="list-group-item contsearch"><a href="men-accessories.html">Men Accessories</a></li>
+                        <li class="list-group-item contsearch"><a href="men-bags.html">Men Bags</a></li>
+                        <li class="list-group-item contsearch"><a href="men-jackets.html">Men Jackets and Coats</a></li>
+                        <li class="list-group-item contsearch"><a href="men-scarves.html">Men Scarves</a></li>
+                        <li class="list-group-item contsearch"><a href="men-shoes.html">Men Shoes</a></li>
+                        <li class="list-group-item contsearch"><a href="men-sale-items.html">Men's items on sale</a></li>
+                        <li class="list-group-item contsearch"><a href="men-tops.html">Men Tops</a></li>
+                        <li class="list-group-item contsearch"><a href="men-trousers.html">Men Trousers</a></li>
+                        <li class="list-group-item contsearch"><a href="store.html">Store near me</a></li>
+                        <li class="list-group-item contsearch"><a href="women-accessories.html">Women Accessories</a></li>
+                        <li class="list-group-item contsearch"><a href="women-bags.html">Women Bags</a></li>
+                        <li class="list-group-item contsearch"><a href="women-jackets.html">Women Jackets and Coats</a></li>
+                        <li class="list-group-item contsearch"><a href="women-scarves.html">Women Scarves</a></li>
+                        <li class="list-group-item contsearch"><a href="women-shoes.html">Women Shoes</a></li>
+                        <li class="list-group-item contsearch"><a href="women-sale-items.html">Women's items on sale</a></li>
+                        <li class="list-group-item contsearch"><a href="women-tops.html">Women Tops</a></li>
+                        <li class="list-group-item contsearch"><a href="women-trousers.html">Women Trousers</a></li>
+                    </ul>
+                </div>
             </form>    
             <div class="iconlinks">
                 <a href ="index.html"><img src="../images/home.svg" alt = "home icon"/></a>
@@ -53,7 +74,7 @@
         <br/>
         
         <!--Start The Main Section--> 
-        <main>
+        <main onmouseover="finishedSearching()">
             
          <h1>measurement</h1>
             
