@@ -1,0 +1,27 @@
+/*Start The main Section*/ 
+#category-container span a p{
+    color: #E01E37;
+    border-bottom-style: dotted;
+}
+
+#category-container span a p:hover{
+    opacity: 0.7;
+}
+
+#category-container span a p label{
+    color: #343a40;
+    background-color: #dee2e6;
+}
+
+#accesories-images img {
+    border: 0;
+}
+
+#accesories-images .row_price p {
+     color: #e01e37;
+}
+
+#accesories-images .row_price .btn {
+     width: 10%;
+}
+ /*End The main Section*/
