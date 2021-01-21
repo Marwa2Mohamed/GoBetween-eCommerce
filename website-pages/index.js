@@ -49,3 +49,12 @@ function finishedSearching() {
       document.getElementsByClassName('searchSection')[0].style.display = 'none';
 }
 /* End the Search Filter*/
+
+/* Start Buy button alert*/
+
+function addedToCart() {
+  alert("Added to cart");
+}
+
+
+/* End Buy button alert*/
