@@ -80,19 +80,20 @@
                 <!--End The main Title container--> 
 
                 <!--Start The products container--> 
-                    <section id="allformen" class="my-5 d-flex flex-row p-5">
+                    <section id="allformen" class="my-md-4 d-flex flex-column flex-md-row p-5">
 
                         <!--Start The category container-->
-                            <section id="products-category" class="mx-5 px-5 d-flex flex-cloumn w-100">
+                            <section id="products-category" class="mx-3 px-3 d-flex flex-cloumn w-50">
                                 
                                 <div id="category-container">
                                     <h4 class="text-start fs-5  display-5 text-capitalize fw-bold">product categories</h4><br/>
                                     <span id="accessories"> 
-                                        <a href="men-accessories.html" class="text-decoration-none" > <p class="text-capitalize border-bottom h6 fw-lighter">accessories <label class="px-2 rounded-pill float-end h6 fw-lighter">8</label></p></a> 
+                                        <a href="men-accessories.html" class="text-decoration-none" > <p class="text-capitalize border-bottom h6 fw-lighter">accessories <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">8</label></p></a> 
                                         
                                     </span><br/>
                                     <span id="bags">
-                                        <a href="men-bags.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">bags <label class="px-2 rounded-pill float-end h6 fw-lighter">4</label></p></a>
+                                        <a href="men-bags.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">bags 
+                                        <label class="px-2 rounded-pill float-end h6 fw-lighter">4</label></p></a>
                                     </span><br/>
                                     <span id="bottoms">
                                         <a href="men-trousers.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">trousers <label class="px-2 rounded-pill float-end h6 fw-lighter">7</label> </p></a>
@@ -119,23 +120,51 @@
 
                         
                         <!--Start products images to display-->
-                        <section id ="display-products">
-                           <label>Showing 4 result</label>
+                        <section id ="display-products" class="mx-xs-5 mx-md-0">
                             
-                           <select name="product" id="products">
-                            <option value="default">default sorting</option>
-                            <option value="sort-by-pop">sort by popularity</option>
-                            <option value="sort-by-average">sort by average rating</option>
-                            <option value="sort-by-low">sortby price: low to high</option>
-                            <option value="sort-by-high">sortby price: high to low</option>
-                          </select>
-                            
-                          <div id="bags-images">
-                              <img src="../images/products-image/adidasproduct.jpg" alt="addidas bags" width = "30%" height = "30%"/> <label class="price">$27.99</label>
-                              <img src="../images/products-image/bag2.jpg" alt=" a red bag product" width = "30%" height = "30%"/> <label class="price">$24.99</label>
-                              <img src="../images/products-image/bag3.jpg" alt="a black bag product" width = "30%" height = "30%"/> <label class="price"><span class="saleItem" style="text-decoration-line: line-through">$20</span>$30</label>
-                              <img src="../images/products-image/bag4.jpg" alt="a brown bag product" width = "30%" height = "30%"/> <label class="price">$111.81</label>
+                           <div class="mt-4 mt-lg-0 mb-5 mx-md-0 px-xs-5 px-lg-0">
+                                <label>Showing 4 result</label>
 
+                               <select name="product" id="products" class="float-end">
+                                <option value="default">default sorting</option>
+                                <option value="sort-by-pop">sort by popularity</option>
+                                <option value="sort-by-average">sort by average rating</option>
+                                <option value="sort-by-low">sortby price: low to high</option>
+                                <option value="sort-by-high">sortby price: high to low</option>
+                              </select>
+                          </div>
+                            
+                          <div id="bags-images" class="container-fluid">
+                              <div class="d-flex flex-xs-column flex-md-row row row_first ">
+                                  <div class="col-md-6" height="100%">
+                                    <img src="../images/products-image/adidasproduct.jpg" alt="addidas bags" class="col-12" height="70%"/> 
+                                    <div class=" d-flex flex-md-column row row_price mb-5 mt-2">
+                                        <label class="price col-6 col-lg-4 fs-5">$27.99</label>
+                                        <button class="buy btn btn-dark btn-sm col-xs-6 col-md-0 text-capitalize fw-light fs-6 w-25 p-3" onclick="addedToCart()">Buy</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6" height="50%">
+                                    <img src="../images/products-image/bag2.jpg" alt=" a red bag product" class="col-12" height="70%"/>
+                                    <div class=" d-flex flex-md-column row row_price mb-5 mt-2">
+                                        <label class="price col-6 col-lg-4 fs-5">$24.99</label>
+                                        <button class="buy btn btn-dark btn-sm col-xs-6 col-md-0 text-capitalize fw-light fs-6 w-25 p-3" onclick="addedToCart()">Buy</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6" height="50%">
+                                      <img src="../images/products-image/bag3.jpg" alt="a black bag product" class="col-12" height="70%"/>
+                                      <div class=" d-flex flex-md-column row row_price mb-5 mt-2">
+                                        <label class="price col-6 col-lg-4 fs-5"><s class="saleItem">$20</s><span class=" mx-2">$30</span></label>
+                                        <button class="buy btn btn-dark btn-sm col-xs-6 col-md-0 text-capitalize fw-light fs-6 w-25 p-3"  onclick="addedToCart()">Buy</button>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6" height="50%">
+                                      <img src="../images/products-image/bag4.jpg" alt="a brown bag product" class="col-12" height="70%"/>
+                                      <div class=" d-flex flex-md-column row row_price mb-5 mt-2">
+                                        <label class="price col-6 col-lg-4 fs-5">$111.81</label>
+                                        <button class="buy btn btn-dark btn-sm col-xs-6 col-md-0 text-capitalize fw-light fs-6 w-25 p-3" onclick="addedToCart()">Buy</button>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
                         </section>
                         <!--End products images to display-->
