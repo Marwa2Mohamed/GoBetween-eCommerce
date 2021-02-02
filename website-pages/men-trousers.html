@@ -9,7 +9,8 @@
          <link rel="icon" href="../images/websiteIcon.svg">
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
          <link rel="stylesheet"  href="index.css" type="text/css">
-         <link rel="stylesheet" href="men-accessories.css" type="text/css"/>
+         <link rel="stylesheet" href="men-trousers.css" type="text/css"/>
+         <link rel="stylesheet" href="productCategoriesStyling.css" type="text/css"/>
          <!--[if lt IE9]>
              <script src="html5shiv-master/dist/html5shiv.min.js"></script>
         <![endif]-->
@@ -80,37 +81,37 @@
                 <!--End The main Title container--> 
 
                 <!--Start The products container--> 
-                    <section id="allformen" class="my-5 d-flex flex-row p-5">
+                    <section id="allformen" class="my-md-5 d-flex flex-column flex-md-row p-5">
 
                         <!--Start The category container-->
-                            <section id="products-category" class="mx-md-5 px-md-5 d-flex flex-cloumn w-md-100">
+                            <section id="products-category" class="mx-md-5 px-md-5 d-flex flex-cloumn">
                                 
                                 <div id="category-container">
-                                    <h4 class="text-start fs-5  display-5 text-capitalize fw-bold">product categories</h4><br/>
+                                    <h4 class="text-start fs-5 display-5 text-capitalize fw-bold">product categories</h4><br/>
                                     <span id="accessories"> 
-                                        <a href="men-accessories.html" class="text-decoration-none" > <p class="text-capitalize border-bottom h6 fw-lighter">accessories <label class="px-2 rounded-pill float-end h6 fw-lighter">8</label></p></a> 
+                                        <a href="men-accessories.html" class="text-decoration-none" > <p class="text-capitalize border-bottom fs-6 fw-lighter">accessory <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">8</label></p></a> 
                                         
                                     </span><br/>
                                     <span id="bags">
-                                        <a href="men-bags.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">bags <label class="px-2 rounded-pill float-end h6 fw-lighter">4</label></p></a>
+                                        <a href="men-bags.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">bags <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">4</label></p></a>
                                     </span><br/>
                                     <span id="bottoms">
-                                        <a href="men-trousers.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">trousers <label class="px-2 rounded-pill float-end h6 fw-lighter">7</label> </p></a>
+                                        <a href="men-trousers.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">trousers <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">7</label> </p></a>
                                     </span><br/>
                                     <span id="jackets">
-                                        <a href="men-jackets.html" class="text-decoration-none"><p class="text-capitalize border-bottom h6 fw-lighter">jackets &amp; coats <label class="px-2 rounded-pill float-end h6 fw-lighter">7</label></p></a>
+                                        <a href="men-jackets.html" class="text-decoration-none"><p class="text-capitalize border-bottom h6 fw-lighter">jackets <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">7</label></p></a>
                                     </span><br/>
                                     <span id="sale-items">
-                                        <a href="men-sale-items.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">sale items <label class="px-2 rounded-pill float-end h6 fw-lighter">7</label></p></a>
+                                        <a href="men-sale-items.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">sale items <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">7</label></p></a>
                                     </span><br/>
                                     <span id="scarves">
-                                        <a href="men-scarves.html" class="text-decoration-none"><p class="text-capitalize border-bottom h6 fw-lighter">scarves <label class="px-2 rounded-pill float-end h6 fw-lighter">4</label></p></a>
+                                        <a href="men-scarves.html" class="text-decoration-none"><p class="text-capitalize border-bottom h6 fw-lighter">scarves <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">4</label></p></a>
                                     </span><br/>
                                     <span id="tops">
-                                        <a href="men-tops.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">tops <label class="px-2 rounded-pill float-end h6 fw-lighter">8</label></p> </a>
+                                        <a href="men-tops.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">tops <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">8</label></p> </a>
                                     </span><br/>
                                     <span id="shoes">
-                                        <a href="men-shoes.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">shoes <label class="px-2 rounded-pill float-end h6 fw-lighter">5</label></p></a>
+                                        <a href="men-shoes.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">shoes <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">5</label></p></a>
                                     </span><br/>
 
                                 </div>
@@ -119,29 +120,82 @@
 
                         
                         <!--Start products images to display-->
-                        <section id ="display-products">
-                           <label>Showing 7 result</label>
+                        <section id ="display-products" class="mx-xs-5 mx-md-0 px-xs-5 px-lg-0">
+                            <div class="mt-4 mt-lg-0 mb-5 mx-xs-5 mx-md-0 px-xs-5 px-lg-0">
+                               
+                                <label>Showing 7 result</label>
+                                <select name="product" id="products" class="float-end">
+                                 <option value="default">default sorting</option>
+                                 <option value="sort-by-pop">sort by popularity</option>
+                                 <option value="sort-by-average">sort by average rating</option>
+                                 <option value="sort-by-low">sortby price: low to high</option>
+                                 <option value="sort-by-high">sortby price: high to low</option>
+                                </select>
+                            </div>
                             
-                           <select name="product" id="products">
-                            <option value="default">default sorting</option>
-                            <option value="sort-by-pop">sort by popularity</option>
-                            <option value="sort-by-average">sort by average rating</option>
-                            <option value="sort-by-low">sortby price: low to high</option>
-                            <option value="sort-by-high">sortby price: high to low</option>
-                          </select>
-                            
-                          <div id="jackets-images">
-                              <img src="../images/products-image/trouser1.jpg" alt="light brown trousers product" width = "10%"/> <label class="price">$40</label>
-                              <img src="../images/products-image/trouser2.jpg" alt="dark green trousers product" width = "7%"/><label class="price">$60.99</label>
-                              <img src="../images/products-image/trouser3.jpg" alt="beige trousers product" width = "7.5%"/><label class="price">$77</label>
-                              <img src="../images/products-image/trouser4.jpg" alt="white trousers product" width = "8.5%"/><label class="price">$53</label>
-                              <img src="../images/products-image/trouser5.jpg" alt="light grey trousers product" width = "10%"/><label class="price"><span class="saleItem" style="text-decoration-line: line-through">$80</span>$50</label>
-                              <img src="../images/products-image/trouser6.jpg" alt="light grey trousers product" width = "6%"/><label class="price">$60.99</label>
-                              <img src="../images/products-image/trouser7.jpg" alt="black trousers product" width = "10%"/><label class="price">$65.50</label>
-                          </div>
+                            <div id="jackets-images" class="container-fluid">
+                                
+<!--                                    <div class="row">-->
+                                <div class="d-flex flex-column flex-md-row">
+                                    <div class="d-flex flex-column">
+                                        <img src="../images/products-image/trouser1.jpg" alt="light brown trousers product" class=" w-75"/> 
+                                        <div class="d-flex flex-column row row_price mb-5 mt-2">   
+                                            <label class="price col-6 col-lg-2 fs-5">$40</label>
+                                            <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 mt-3 p-3 w-25" onclick="addedToCart()">Buy</button>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <img src="../images/products-image/trouser2.jpg" alt="dark green trousers product" class="w-75"/>
+                                        <div class="d-flex flex-column row row_price mb-5 mt-3">   
+                                            <label class="price col-6 col-lg-2 fs-5">$60.99</label>
+                                            <button class="buy btn btn-dark btn-sm text-capitalize fw-light mt-3 fs-6 p-3 w-50" onclick="addedToCart()">Buy</button>
+                                        </div>            
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <img src="../images/products-image/trouser3.jpg" alt="beige trousers product" class="w-75 w-md-100">
+                                        <div class="d-flex flex-column row row_price mb-5 mt-2">   
+                                            <label class="price col-6 col-lg-4 fs-5">$77</label>
+                                            <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 p-3 mt-3 w-50" onclick="addedToCart()">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="../images/products-image/trouser4.jpg" alt="white trousers product" class="w-lg-75 h-lg-75"/>
+                                        <div class="d-flex flex-column row row_price mb-5 mt-2">
+                                            <label class="price col-6 col-lg-2 fs-5">$53</label>
+                                            <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 p-3 mt-3 w-25" onclick="addedToCart()">Buy</button>
+                                        </div>           
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="../images/products-image/trouser5.jpg" alt="light grey trousers product" class="w-lg-75 h-lg-75"/>
+                                        <div class="d-flex flex-column row row_price mb-5 mt-2">
+                                            <label class="price col-6 col-lg-4 fs-5"><s class="saleItem">$80</s><span class=" mx-2">$50</span></label>
+                                            <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 p-3 mt-3 w-25" onclick="addedToCart()">Buy</button>
+                                    </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="../images/products-image/trouser6.jpg" alt="light grey trousers product" class="w-xs-50 w-lg-75 h-lg-75"/>
+                                        <div class="d-flex flex-column row row_price mb-5 mt-2">
+                                            <label class="price col-6 col-lg-4 fs-5">$60.99</label>
+                                            <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 p-3 mt-3 w-25" onclick="addedToCart()">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="../images/products-image/trouser7.jpg" alt="black trousers product" class="w-lg-100 h-lg-75"/> 
+                                        <div class="d-flex flex-column row row_price mb-5 mt-2">
+                                            <label class="price col-6 col-lg-4 fs-5">$65.50</label>
+                                            <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 p-3 mt-3 w-25" onclick="addedToCart()">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+<!--                                         </div>-->
+                                   
+                         </div>
                         </section>
                         <!--End products images to display-->
-
 
 
                     </section>    
