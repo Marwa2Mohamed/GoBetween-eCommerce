@@ -83,7 +83,7 @@
                     <section id="allformen" class="my-md-4 d-flex flex-column flex-md-row p-5">
 
                         <!--Start The category container-->
-                            <section id="products-category" class="mx-3 px-3 d-flex flex-cloumn w-100">
+                            <section id="products-category" class="mx-3 px-3 d-flex flex-cloumn w-md-50">
                                 
                                 <div id="category-container">
                                     <h4 class="text-start fs-5 display-5 text-capitalize fw-bold">product categories</h4><br/>
@@ -119,7 +119,7 @@
 
                         
                         <!--Start products images to display-->
-                        <section id ="display-products" class="mx-xs-5 mx-md-0">
+                        <section id ="display-products" class="p-5">
                           
                             <div class="mt-4 mt-lg-0 mb-5 mx-md-0 px-xs-5 px-lg-0">
                                 
@@ -133,14 +133,20 @@
                                 <option value="sort-by-high">sortby price: high to low</option>
                               </select>
                           </div>
-                          <div id="jackets-images">
-                              <img src="../images/products-image/jackets1.jpg" alt="neon jackets product" width = "15%"/> <label class="price">$40</label>
-                              <img src="../images/products-image/jackets2.jpg" alt="black jackets product" width = "15%"/><label class="price">$60.99</label>
-                              <img src="../images/products-image/jackets3.jpg" alt="sport jackets product" width = "12%"/><label class="price">$77</label>
-                              <img src="../images/products-image/jacket4.jpg" alt="leather jackets product" width = "12%"/><span class="saleItem" style="text-decoration-line: line-through">$80</span><label class="price">$53</label>
-                              <img src="../images/products-image/coat1.jpg" alt="darkbrown coat product" width = "12%"/><label class="price">$80</label>
-                              <img src="../images/products-image/coat2.jpg" alt="lightbrown coat product" width = "12%"/><label class="price">$60.99</label>
-                              <img src="../images/products-image/coat3.jpg" alt="grey coat product" width = "15%"/><label class="price">$65.50</label>
+                          <div id="jackets-images" class="container-fluid">
+                              <div class="d-flex flex-row justify-content-between">
+                                <img src="../images/products-image/jackets1.jpg" alt="neon jackets product" width = "15%"/><p class="price col-6 col-lg-4 fs-5">$40</p>
+                                <img src="../images/products-image/jackets2.jpg" alt="black jackets product" width = "15%"/><label class="price">$60.99</label>
+                                <img src="../images/products-image/jackets3.jpg" alt="sport jackets product" width = "12%"/><label class="price">$77</label>
+                              </div>
+                              <div class="d-flex flex-row justify-content-between">
+                                <img src="../images/products-image/jacket4.jpg" alt="leather jackets product" width = "12%"/><span class="saleItem" style="text-decoration-line: line-through">$80</span><label class="price">$53</label>
+                                <img src="../images/products-image/coat1.jpg" alt="darkbrown coat product" width = "12%"/><label class="price">$80</label>
+                                <img src="../images/products-image/coat2.jpg" alt="lightbrown coat product" width = "12%"/><label class="price">$60.99</label>
+                              </div>
+                              <div class="d-flex flex-row justify-content-between">
+                                <img src="../images/products-image/coat3.jpg" alt="grey coat product" width = "15%"/><label class="price">$65.50</label>
+                              </div>
                           </div>
                         </section>
                         <!--End products images to display-->
