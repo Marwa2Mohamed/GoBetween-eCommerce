@@ -14,7 +14,16 @@
              <script src="html5shiv-master/dist/html5shiv.min.js"></script>
         <![endif]-->
     </head>
-     <body>
+     
+    <!--Starting Inner Styling-->
+     <style>
+         #jackets-images img{
+             object-fit: contain;
+         }
+     </style>
+     <!--Ending Inner Styling-->
+    
+    <body>
         <!--Start The Header & Navigation Section--> 
          <header>
                 <nav class="navbar navbar-expand-xl flex-column flex-sm-row  justify-content-sm-between align-items-start navbar-dark bg-dark fixed-top" onclick="finishedSearching()">
@@ -83,7 +92,7 @@
                     <section id="allformen" class="my-md-4 d-flex flex-column flex-md-row p-5">
 
                         <!--Start The category container-->
-                            <section id="products-category" class="mx-3 px-3 d-flex flex-cloumn w-md-50">
+                            <section id="products-category" class="mx-3 px-3 d-flex flex-cloumn w-25">
                                 
                                 <div id="category-container">
                                     <h4 class="text-start fs-5 display-5 text-capitalize fw-bold">product categories</h4><br/>
@@ -119,7 +128,7 @@
 
                         
                         <!--Start products images to display-->
-                        <section id ="display-products" class="p-5">
+                        <section id ="display-products" class="mt-5 w-100">
                           
                             <div class="mt-4 mt-lg-0 mb-5 mx-md-0 px-xs-5 px-lg-0">
                                 
@@ -133,20 +142,52 @@
                                 <option value="sort-by-high">sortby price: high to low</option>
                               </select>
                           </div>
-                          <div id="jackets-images" class="container-fluid">
-                              <div class="d-flex flex-row justify-content-between">
-                                <img src="../images/products-image/jackets1.jpg" alt="neon jackets product" width = "15%"/><p class="price col-6 col-lg-4 fs-5">$40</p>
-                                <img src="../images/products-image/jackets2.jpg" alt="black jackets product" width = "15%"/><label class="price">$60.99</label>
-                                <img src="../images/products-image/jackets3.jpg" alt="sport jackets product" width = "12%"/><label class="price">$77</label>
-                              </div>
-                              <div class="d-flex flex-row justify-content-between">
-                                <img src="../images/products-image/jacket4.jpg" alt="leather jackets product" width = "12%"/><span class="saleItem" style="text-decoration-line: line-through">$80</span><label class="price">$53</label>
-                                <img src="../images/products-image/coat1.jpg" alt="darkbrown coat product" width = "12%"/><label class="price">$80</label>
-                                <img src="../images/products-image/coat2.jpg" alt="lightbrown coat product" width = "12%"/><label class="price">$60.99</label>
-                              </div>
-                              <div class="d-flex flex-row justify-content-between">
-                                <img src="../images/products-image/coat3.jpg" alt="grey coat product" width = "15%"/><label class="price">$65.50</label>
-                              </div>
+                            
+                            <div id="jackets-images" class="container-fluid">
+                                
+                                <div class="d-flex flex-column flex-md-row  mt-5">
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/jackets1.jpg" alt="neon jackets product" class="float-start w-100 h-100"/>
+                                        <p class="price col-6 col-lg-4 fs-5">$40</p>
+                                        <button class="buy btn btn-dark btn-sm text-capitalize text-center fw-light fs-6 py-3 px-2 col-4 col-md-5 col-lg-4" onclick="addedToCart()">Buy</button>
+                                    </div>
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/jackets2.jpg" alt="black jackets product"class="float-start w-100 h-100"/>
+                                        <p class="price col-6 col-lg-4 fs-5">$60.99</p>
+                                        <button class="buy btn btn-dark btn-sm text-capitalize text-center fw-light fs-6 py-3 px-2 col-4 col-md-5 col-lg-4" onclick="addedToCart()">Buy</button>
+                                    </div>
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/jackets3.jpg" alt="sport jackets product" class="float-start w-100 h-100"/>
+                                        <p class="price col-6 col-lg-4 fs-5">$77</p>
+                                        <button class="buy btn btn-dark btn-sm text-capitalize text-center fw-light fs-6 py-3 px-2 col-4 col-md-7 col-lg-5" onclick="addedToCart()">Buy</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex flex-column flex-md-row mt-5">
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/jacket4.jpg" alt="leather jackets product" class="float-start w-100 h-100"/>
+                                        <p class="price col-6 col-lg-4 fs-5"><s class="saleItem">$80</s><span class=" mx-2">$53</span></p>
+                                        <button class="buy btn btn-dark btn-sm text-capitalize text-center fw-light fs-6 py-3 px-2 col-4 col-md-5 col-lg-3" onclick="addedToCart()">Buy</button>
+                                    </div>
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/coat1.jpg" alt="darkbrown coat product" class="float-start w-100 h-100"/>
+                                        <p class="price col-6 col-lg-4 fs-5">$80</p>
+                                        <button class="buy btn btn-dark btn-sm text-capitalize text-center fw-light fs-6 py-3 px-2 col-4 col-md-6 col-lg-6" onclick="addedToCart()">Buy</button>
+                                    </div>
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/coat2.jpg" alt="lightbrown coat product" class="float-start w-100 h-100"/>
+                                        <p class="price col-6 col-lg-4 fs-5">$60.99</p>
+                                        <button class="buy btn btn-dark btn-sm text-capitalize text-center fw-light fs-6 py-3 px-2 col-4 col-md-5 col-lg-3" onclick="addedToCart()">Buy</button>
+                                    </div>
+                                
+                                </div>
+                                <div class="d-flex flex-column flex-md-row mt-5 mb-5">
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/coat3.jpg" alt="grey coat product" class="float-start w-75 h-75"/>
+                                        <p class="price col-6 col-lg-4 fs-5">$65.50</p>
+                                        <button class="buy btn btn-dark btn-sm text-capitalize text-center fw-light fs-6 py-3 px-2 col-4 col-lg-3  col-4 col-md-2 col-lg-3" onclick="addedToCart()">Buy</button>
+                                    </div>
+                                </div>
                           </div>
                         </section>
                         <!--End products images to display-->
