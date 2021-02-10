@@ -14,6 +14,14 @@
              <script src="html5shiv-master/dist/html5shiv.min.js"></script>
         <![endif]-->
     </head>
+    
+    <style>
+         #accesories-images img{
+             object-fit: contain;
+              border: 0;
+         }
+     </style>
+    
      <body>
         <!--Start The Header & Navigation Section--> 
         <header>
@@ -83,10 +91,10 @@
                 <!--End The main Title container--> 
 
                 <!--Start The products container-->
-                    <section id="allformen" class="my-md-5 d-flex flex-column flex-md-row p-5">
+                    <section id="allformen" class="my-md-5 d-flex flex-column flex-md-row p-5 p-md-3">
 
                         <!--Start The category container-->
-                            <section id="products-category" class="mx-md-5 px-md-3 d-flex flex-cloumn w-md-50">
+                            <section id="products-category" class="mx-3 mx-sm-4 px-sm-3 d-flex flex-cloumn w-xs-100 w-sm-50">
                                 
                                 <div id="category-container">
                                     <h4 class="text-start fs-5 display-5 text-capitalize fw-bold">product categories</h4><br/>
@@ -123,9 +131,9 @@
 
                         
                         <!--Start products images to display-->
-                        <section id ="display-products" class="mx-xs-5 mx-md-0 px-xs-3 px-lg-0 w-md-50">
+                        <section id ="display-products" class="mt-3 w-md-50">
                             
-                          <div class="mt-4 mt-lg-0 mb-5 mx-xs-5 mx-md-0 px-xs-5 px-lg-0">
+                          <div class="mt-4 mt-lg-0 mb-5 mx-md-0 px-xs-5 px-lg-0">
                                 <label>Showing 8 result</label>
 
                                <select name="product" id="products" class="float-end">
@@ -138,88 +146,71 @@
                           </div>  
                             
                           <div id="accesories-images" class="container-fluid">
-                              <div class="d-flex flex-xs-column flex-md-row row row_first ">
-                                <div class="col-md-4">
-                                    <img src="../images/products-image/watch1.jpg" alt="first watch product" class="img-thumbnail col-12"/>
+                               <div class="d-flex flex-column flex-md-row mt-5">
+                                <div class="d-flex flex-column mt-5">
+                                    <img src="../images/products-image/watch1.jpg" alt="first watch product" class="float-start w-100 h-100 img-thumbnail"/>
                                     <div class=" d-flex flex-md-column row row_price mb-5 mt-2">
                                       <p class="price col-6 col-lg-4 fs-5"><s class="saleItem">$70</s><span class=" mx-2">$55</span></p>
                                       <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 p-3 col-5 col-lg-4" onclick="addedToCart()">Buy</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <img src="../images/products-image/watch2.jpg" alt="second watch product" class="img-thumbnail col-12"/>
+                                <div class="d-flex flex-column mt-5">
+                                    <img src="../images/products-image/watch2.jpg" alt="second watch product" class="float-start w-100 h-100 img-thumbnail"/>
                                     <div class="d-flex flex-md-column row row_price mb-5 mt-2">
                                       <p class="price col-6 col-lg-2 fs-5">$67</p>
                                       <button class="buy btn btn-dark btn-sm col-xs-6 col-md-0 text-capitalize fw-light fs-6 col-5 col-lg-4 p-3" onclick="addedToCart()">Buy</button>
                                     </div>
                                 </div>
-                                <div  class="col-md-4">
-                                    <img src="../images/products-image/watch3.jpg" alt="third watch product" class="img-thumbnail col-12"/> 
+                                <div class="d-flex flex-column mt-5">
+                                    <img src="../images/products-image/watch3.jpg" alt="third watch product" class="float-start w-100 h-100 img-thumbnail"/> 
                                     <div class="d-flex flex-md-column row row_price mb-5 mt-2">
                                       <p class="price col-6 col-lg-2 fs-5">$37.50</p>
                                       <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3" onclick="addedToCart()">Buy</button>
                                     </div>
                                 </div>
                               </div>
-<!--
-                              <div class=" d-flex flex-xs-column flex-md-row row_price mb-5 mt-2">
-                                  
-                                  
-                                  <button class="btn btn-dark btn-sm col-1 col-lg-2 mx-lg-5 text-capitalize fw-light fs-6">add to cart </button>
-                                  
-                                  <button class="btn btn-dark btn-sm col-1 col-lg-2 text-capitalize fw-light fs-6">add to cart </button>
-                              </div>
--->                           
-                            <div class="d-flex flex-xs-column flex-md-row row row_second">
-                                <div class="col-md-4">
-                                    <img src="../images/products-image/wallet1.jpg" alt="first wallet product" class="img-thumbnail col-12"/>
-                                      <div class="d-flex flex-md-column row row_price mb-5 mt-2">
-                                        <p class="price col-6 col-lg-2 fs-5"><s class="saleItem">$30</s><span class="mx-2">$20.40 </span></p>
-                                        <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3"  onclick="addedToCart()">Buy</button>
-                                      </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="../images/products-image/wallet2.jpg" alt="second wallet product" class="img-thumbnail col-12"/> 
-                                      <div class="d-flex flex-md-column row row_price mb-5 mt-2">
-                                        <p class="price col-6 col-lg-2 fs-5">$34.80</p>
-                                        <button class = "buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3"  onclick="addedToCart()">Buy</button>
-                                      </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="../images/products-image/wallet3.jpg" alt="third wallet product" class="img-thumbnail col-12"/> 
-                                      <div class="d-flex flex-md-column row row_price mb-5 mt-2">
-                                        <p class="price col-6 col-lg-2 fs-5">$34.80</p>
-                                        <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3"  onclick="addedToCart()">Buy</button>
-                                      </div>
-                                </div>
-                              </div>
-<!--
-                              <div class="d-flex flex-row row_price mb-5 mt-2">
-                                  
-                              </div>
--->                           
-                            <div class="d-flex flex-xs-column flex-md-row row row_third">
-                                <div class="col-md-4">
-                                    <img src="../images/products-image/bracelet1.jpg" alt="first bracelet product" class="img-thumbnail col-12"/>
-                                    <div class="d-flex flex-md-column row row_price mb-5 mt-2">
-                                      <p class="price col-6 col-lg-2 fs-5">$20</p>
-                                      <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3" onclick="addedToCart()">Buy</button>
+                              <!---->                           
+                               <div class="d-flex flex-column flex-md-row mt-5">
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/wallet1.jpg" alt="first wallet product" class="float-start w-100 h-100 img-thumbnail"/>
+                                          <div class="d-flex flex-md-column row row_price mb-5 mt-2">
+                                            <p class="price col-6 col-lg-2 fs-5"><s class="saleItem">$30</s><span class="mx-2">$20.40 </span></p>
+                                            <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3"  onclick="addedToCart()">Buy</button>
+                                          </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="../images/products-image/bracelet2.jpg" alt="second bracelet product" class="img-thumbnail col-12"/>
-                                    <div class="d-flex flex-md-column row row_price mb-5 mt-2">
-                                      <p class="price col-6 col-lg-2 fs-5">$15</p>
-                                     <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3" onclick="addedToCart()">Buy</button>
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/wallet2.jpg" alt="second wallet product" class="float-start w-100 h-100 img-thumbnail"/> 
+                                          <div class="d-flex flex-md-column row row_price mb-5 mt-2">
+                                            <p class="price col-6 col-lg-2 fs-5">$34.80</p>
+                                            <button class = "buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3"  onclick="addedToCart()">Buy</button>
+                                          </div>
                                     </div>
-                                </div>
-                              </div>
-<!--
-                              <div class="d-flex flex-row row_price mb-5 mt-2">
-                                
-                                
-                              </div>
--->
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/wallet3.jpg" alt="third wallet product" class="float-start w-100 h-100 img-thumbnail"/> 
+                                          <div class="d-flex flex-md-column row row_price mb-5 mt-2">
+                                            <p class="price col-6 col-lg-2 fs-5">$34.80</p>
+                                            <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3"  onclick="addedToCart()">Buy</button>
+                                          </div>
+                                    </div>
+                                  </div>
+                              <!---->                           
+                               <div class="d-flex flex-column flex-md-row mt-5">
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/bracelet1.jpg" alt="first bracelet product" class="float-start w-100 h-100 img-thumbnail"/>
+                                        <div class="d-flex flex-md-column row row_price mb-5 mt-2">
+                                          <p class="price col-6 col-lg-2 fs-5">$20</p>
+                                          <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3" onclick="addedToCart()">Buy</button>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column mt-5">
+                                        <img src="../images/products-image/bracelet2.jpg" alt="second bracelet product" class="float-start w-100 h-100 img-thumbnail"/>
+                                        <div class="d-flex flex-md-column row row_price mb-5 mt-2">
+                                          <p class="price col-6 col-lg-2 fs-5">$15</p>
+                                         <button class="buy btn btn-dark btn-sm text-capitalize fw-light fs-6 col-5 col-lg-4 p-3" onclick="addedToCart()">Buy</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                            <!---->
                           </div>
                         </section>
                         <!--End products images to display-->
