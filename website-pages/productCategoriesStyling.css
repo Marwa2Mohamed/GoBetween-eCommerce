@@ -17,7 +17,7 @@
     border: 0;
 }
 
-#accesories-images .row_price p {
+#accesories-images .row_price p, #jackets-images .price {
      color: #e01e37;
 }
  /*End The main Section*/
