@@ -76,9 +76,11 @@
     
         <!--Start The main Section--> 
             <main onmouseover="finishedSearching()">
+                
                    <div class="spacerpages w-sm-100 h-sm-100" >
                     &nbsp;
                 </div> 
+                
                 <!--Start The main Title container--> 
                     <section id="page-title" class="text-center my-1 pb-3">
                         <h1 class="text-center display-3 text-capitalize border-top border-bottom py-5">bags</h1>
@@ -86,26 +88,25 @@
                 <!--End The main Title container--> 
 
                 <!--Start The products container--> 
-                    <section id="allformen" class="my-md-4 d-flex flex-column flex-md-row p-5">
+                    <section id="allformen" class="my-md-5 d-flex flex-column flex-md-row p-5 p-md-3">
 
                         <!--Start The category container-->
-                            <section id="products-category" class="mx-3 mx-sm-4 px-sm-3 d-flex flex-cloumn w-xs-100 w-sm-50">
+                            <section id="products-category" class="mx-3 mx-sm-5 d-flex flex-cloumn w-xs-100 w-sm-75">
                                 
                                 <div id="category-container">
-                                    <h4 class="text-start fs-5  display-5 text-capitalize fw-bold">product categories</h4><br/>
+                                    <h4 class="text-start fs-5 display-5 text-capitalize fw-bold">product categories</h4><br/>
                                     <span id="accessories"> 
                                         <a href="men-accessories.html" class="text-decoration-none" > <p class="text-capitalize border-bottom h6 fw-lighter">accessory <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">8</label></p></a> 
                                         
                                     </span><br/>
                                     <span id="bags">
-                                        <a href="men-bags.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">bags 
-                                        <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">4</label></p></a>
+                                        <a href="men-bags.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">bags <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">4</label></p></a>
                                     </span><br/>
                                     <span id="bottoms">
                                         <a href="men-trousers.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">trousers <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">7</label> </p></a>
                                     </span><br/>
                                     <span id="jackets">
-                                        <a href="men-jackets.html" class="text-decoration-none"><p class="text-capitalize border-bottom h6 fw-lighter">jackets <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">7</label></p></a>
+                                        <a href="men-jackets.html" class="text-decoration-none"><p class="text-capitalize border-bottom h6 fw-lighter">jackets<label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">7</label></p></a>
                                     </span><br/>
                                     <span id="sale-items">
                                         <a href="men-sale-items.html" class="text-decoration-none"> <p class="text-capitalize border-bottom h6 fw-lighter">sale items <label class="px-2 px-md-1 px-lg-2 rounded-pill float-end h6 fw-lighter">7</label></p></a>
@@ -126,48 +127,48 @@
 
                         
                         <!--Start products images to display-->
-                            <section id ="display-products" class="mt-3 w-md-50">
+                            <section id ="display-products" class="w-sm-25">
                             
-                           <div class="mt-4 mt-lg-0 mb-5 mx-md-0 px-xs-5 px-lg-0">
-                                <label>Showing 4 result</label>
+                               <div class="mt-4 mt-lg-0 mb-5 mx-md-0 px-sm-5">
+                                    <label>Showing 8 result</label>
 
-                               <select name="product" id="products" class="float-end">
-                                <option value="default">default sorting</option>
-                                <option value="sort-by-pop">sort by popularity</option>
-                                <option value="sort-by-average">sort by average rating</option>
-                                <option value="sort-by-low">sortby price: low to high</option>
-                                <option value="sort-by-high">sortby price: high to low</option>
-                              </select>
-                          </div>
+                                   <select name="product" id="products" class="float-end">
+                                    <option value="default">default sorting</option>
+                                    <option value="sort-by-pop">sort by popularity</option>
+                                    <option value="sort-by-average">sort by average rating</option>
+                                    <option value="sort-by-low">sortby price: low to high</option>
+                                    <option value="sort-by-high">sortby price: high to low</option>
+                                  </select>
+                              </div>  
                             
-                           <div id="bags-images" class="container-fluid">
+                            <div id="bags-images" class="container-fluid">
                               <div class="d-flex flex-xs-column flex-md-row row row_first ">
                                   <div class="col-md-6" height="100%">
                                     <img src="../images/products-image/adidasproduct.jpg" alt="addidas bags" class="col-12" height="70%"/> 
-                                    <div class=" d-flex flex-md-column row row_price mb-5 mt-2">
-                                        <label class="price col-6 col-lg-4 fs-5">$27.99</label>
-                                        <button class="buy btn btn-dark btn-sm col-xs-6 col-md-0 text-capitalize fw-light fs-6 w-25 p-3" onclick="addedToCart()">Buy</button>
+                                    <div class=" d-flex flex-md-column row row_price mb-5 mt-2 mx-5">
+                                        <p class="price col-6 col-lg-4 fs-5"><span class=" mx-2">$27.99</span></p>
+                                        <button class="buy btn btn-dark btn-sm col-6 col-sm-5 col-md-7 col-xl-3 text-capitalize fw-light fs-6 p-3" onclick="addedToCart()">Buy</button>
                                     </div>
                                   </div>
                                   <div class="col-md-6" height="50%">
                                     <img src="../images/products-image/bag2.jpg" alt=" a red bag product" class="col-12" height="70%"/>
-                                    <div class=" d-flex flex-md-column row row_price mb-5 mt-2">
-                                        <label class="price col-6 col-lg-4 fs-5">$24.99</label>
-                                        <button class="buy btn btn-dark btn-sm col-xs-6 col-md-0 text-capitalize fw-light fs-6 w-25 p-3" onclick="addedToCart()">Buy</button>
+                                    <div class=" d-flex flex-md-column row row_price mb-5 mt-2 mx-5">
+                                        <p class="price col-6 col-lg-4 fs-5"><span class=" mx-2">$24.99</span></p>
+                                        <button class="buy btn btn-dark btn-sm col-6 col-sm-5 col-md-7 col-xl-3 text-capitalize fw-light fs-6 w-xs-25 w-sm-25 p-3" onclick="addedToCart()">Buy</button>
                                     </div>
                                   </div>
                                   <div class="col-md-6" height="50%">
                                       <img src="../images/products-image/bag3.jpg" alt="a black bag product" class="col-12" height="70%"/>
-                                      <div class=" d-flex flex-md-column row row_price mb-5 mt-2">
-                                        <label class="price col-6 col-lg-4 fs-5"><s class="saleItem">$20</s><span class=" mx-2">$30</span></label>
-                                        <button class="buy btn btn-dark btn-sm col-xs-6 col-md-0 text-capitalize fw-light fs-6 w-25 p-3"  onclick="addedToCart()">Buy</button>
+                                      <div class=" d-flex flex-md-column row row_price mb-5 mt-2 mx-5">
+                                        <p class="price col-6 col-lg-4 fs-5"><s class="saleItem">$20</s><span class=" mx-2">$30</span></p>
+                                        <button class="buy btn btn-dark btn-sm col-6 col-sm-5 col-md-7 col-xl-3 text-capitalize fw-light fs-6 w-xs-25 w-sm-25 p-3"  onclick="addedToCart()">Buy</button>
                                       </div>
                                   </div>
                                   <div class="col-md-6" height="50%">
                                       <img src="../images/products-image/bag4.jpg" alt="a brown bag product" class="col-12" height="70%"/>
-                                      <div class=" d-flex flex-md-column row row_price mb-5 mt-2">
-                                        <label class="price col-6 col-lg-4 fs-5">$111.81</label>
-                                        <button class="buy btn btn-dark btn-sm col-xs-6 col-md-0 text-capitalize fw-light fs-6 w-25 p-3" onclick="addedToCart()">Buy</button>
+                                      <div class=" d-flex flex-md-column row row_price mb-5 mt-2 mx-5">
+                                          <p class="price col-6 col-lg-4 fs-5"><span class=" mx-2">$111.81</span></p>
+                                        <button class="buy btn btn-dark btn-sm col-6 col-sm-5 col-md-7 col-xl-3 text-capitalize fw-light fs-6 w-xs-25 w-sm-25 p-3" onclick="addedToCart()">Buy</button>
                                       </div>
                                   </div>
                               </div>
